@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Code mini-projects in 5 minutes without any tools and frameworks. Conway's game of life" />
+        <meta name="author" content="" />
+        <title>5 minutes of code - Conway's game of Life!</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML37MMXGZT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ML37MMXGZT');
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="/">5 minutes of code</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://www.youtube.com/channel/UCoa8IHQyqtYkHhsOZ4XpHaw">YouTube</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <h1 class="display-5 fw-bold">Conway's game of Life (or just Life) in 5 minutes</h1>
+
+                <h2>About</h2>
+                <p>
+                    Conway's game of Life (or as it sometimes called - Life) can be considered as life simulation.<br/>
+                    The rules for the game were developed in 1970-s and are very simple:
+                    <ul>
+                        <li>Game happens on 2D plane consisting of cells (each cells has 8 neighbours)</li>
+                        <li>Cell can be either dead or alive</li>
+                        <li>On each game step (generation) cell can change state:
+                            <ul>
+                                <li>Dead cell can become a live cell if it has exactly 3 live neighbour cells</li>
+                                <li>Live cell continues to live if it has 2 or 3 live neighbour cells</li>
+                                <li>In all other cases live cells die (either from overpopulation or from loneliness)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    In essence - this is a zero-player game which flow is determined only by initial position.<br/>
+                    However you never know how the game will evolve after several iterations.
+                </p>
+                <p>
+                    <b>Link to Wikipedia: </b> <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</a>
+                </p>
+
+
+                <h2>Live coding</h2>
+
+                <p>Here is a live coding session that shows how it can be done.</p>
+                <p><b>Duration:</b> 4:54</p>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/PMnq5s944c4"></iframe>
+                </div>
+                <p>
+                    <b>Sources:</b> <i class="bi bi-github"></i> <a href="https://github.com/5minute/examples/tree/main/conway_life">https://github.com/5minute/examples/tree/main/conway_life</a>
+                </p>
+                <p>
+                    <b>See live results:</b><a href="https://jsfiddle.net/9sycwv48/">https://jsfiddle.net/9sycwv48/</a>
+                </p>
+                <p>
+                    <b>Disclaimer:</b> never use this code in production. It was created for fun.
+                </p>
+                
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; 5minute.github.io 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
