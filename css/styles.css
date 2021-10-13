@@ -12183,3 +12183,9 @@ textarea.form-control-lg {
 }
 
 .nk-cookie-banner { position: fixed; bottom: 0px; left: 0px; width: 100%; z-index: 999; border-radius: 0px; display: none; }
+
+.logo {
+  border-radius: 50%;
+  width: 4rem;
+  margin-right: 20px;
+}
